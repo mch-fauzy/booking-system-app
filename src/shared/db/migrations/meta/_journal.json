@@ -1,0 +1,13 @@
+{
+  "version": "7",
+  "dialect": "postgresql",
+  "entries": [
+    {
+      "idx": 0,
+      "version": "7",
+      "when": 1788880547817,
+      "tag": "0000_create_trial_booking_tables",
+      "breakpoints": true
+    }
+  ]
+}
