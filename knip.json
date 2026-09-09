@@ -1,0 +1,34 @@
+{
+  "$schema": "https://unpkg.com/knip@6/schema.json",
+  "entry": [
+    "src/app/**/{page,layout,not-found,error}.tsx",
+    "src/app/**/route.ts"
+  ],
+  "project": [
+    "src/**/*.{ts,tsx}",
+    "scripts/**/*.{ts,mjs}"
+  ],
+  "ignore": [
+    "src/shared/components/ui/**"
+  ],
+  "ignoreDependencies": [
+    "tailwindcss",
+    "tw-animate-css",
+    "shadcn"
+  ],
+  "ignoreExportsUsedInFile": {
+    "type": false,
+    "interface": false,
+    "variable": false,
+    "function": false,
+    "member": false
+  },
+  "rules": {
+    "exports": "error",
+    "types": "error",
+    "nsExports": "error",
+    "nsTypes": "error",
+    "duplicates": "error",
+    "enumMembers": "error"
+  }
+}
