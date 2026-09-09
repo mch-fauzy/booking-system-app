@@ -8,6 +8,13 @@ Built as one Next.js (App Router) app with a Hono API mounted in-process, Drizzl
 Postgres. The interesting part is the confirm transaction — see
 [The last-seat race](#the-last-seat-race).
 
+**Live demo:** <https://booking-system-app-alpha.vercel.app>
+
+Seeded with the data in [Seed data](#seed-data). Pay with `4242 4242 4242 4242` to succeed, or any
+number ending in `0000` (e.g. `4000 0000 0000 0000`) to force a decline. To see the last-seat race,
+open "Math – Fractions" (1 seat left) in two tabs, book Leo Tan in one and Sofia Lim in the other,
+then pay both: the first is confirmed, the second gets a 409 and is never charged.
+
 ## Run it
 
 Requires **Node ≥ 22.12** (developed on 22.14) and a Neon Postgres database (free tier is enough).
